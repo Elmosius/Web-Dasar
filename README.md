@@ -4,7 +4,7 @@ Perjalanan Belajar Dasar-Dasar Web Saya
 
 Repositori ini mendokumentasikan kemajuan dan perkembangan saya selama mengikuti matakuliah Web Dasar 2022. Berikut adalah sekilas isi dan hal-hal yang telah saya bangun:
 
-## Pembelajaran Utama
+## 📚 Pembelajaran Utama
 
 Dasar-dasar HTML: Menguasai struktur semantik, elemen, atribut, dan membangun halaman web pertama saya. <br>
 Menerapkan Gaya dengan CSS: Membuat tata letak yang menarik secara visual, memahami model kotak, dan mengaplikasikan properti seperti warna, tipografi, dan penempatan. <br>
