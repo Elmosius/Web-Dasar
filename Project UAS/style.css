@@ -1,0 +1,416 @@
+/* Nama team = Celvin's (Case Elmo Kevin'  Store)
+    Tema =  Small-Medium Enterprise (Jual Case HP)
+    Member :
+    1. 2272008 - Elmosius Suli
+    2. 2272007 - Kevin Owen
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 2em 5em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+/* alert */
+
+.alert-atas {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* akhir alert */
+
+/* Navbar */
+
+nav {
+  transition: all ease-in-out 0.6s;
+}
+
+.navbar-index {
+  background-color: rgb(179, 170, 170);
+  font-family: "Prompt", sans-serif;
+}
+
+.navbar-index-product {
+  background-color: #c1b0a0;
+  font-family: "Prompt", sans-serif;
+}
+
+.navbar-index-product.active {
+  background-color: white;
+  color: black;
+  transition: all ease-in-out 0.6s;
+}
+
+.navbar-index.active {
+  background-color: white;
+  color: black;
+  transition: all ease-in-out 0.6s;
+}
+
+.navbar-effect:hover {
+  border-bottom: 2px solid black;
+}
+
+/* akhir navbar */
+
+/* index */
+
+.margin-0auto {
+  margin: 0 auto !important;
+}
+
+#promo {
+  background-color: gray;
+}
+.img-hero {
+  margin: 0 auto;
+  width: 101%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: cover;
+}
+
+#button-colour {
+  color: black;
+}
+.gambar-1 {
+  width: 100%;
+  max-height: 80vh;
+}
+
+#gambar-brand {
+  width: 240px;
+}
+
+.font-judul {
+  font-size: 5em;
+  transform: scaleX(0, 100px);
+  font-weight: 700;
+}
+
+.font-judul2 {
+  font-size: 3em;
+  transform: scaleX(0, 100px);
+  font-weight: 700;
+}
+
+.font-judul1 {
+  z-index: 10;
+  font-size: 1vw;
+}
+
+.cards img {
+  width: 100%;
+}
+
+.cards h1 {
+  margin: 0.5rem 0;
+}
+
+/* owl corousel */
+
+.brand-caro {
+  border-top: none;
+}
+.item img {
+  width: 70%;
+}
+
+/* akhir index */
+
+/* About */
+
+#hero-about {
+  height: auto;
+  min-height: 100vh;
+}
+
+.judul-about {
+  font-size: 4em;
+}
+
+.gambar-about {
+  width: 100%;
+}
+
+.gambar-about1 {
+  width: 75%;
+}
+
+/* ********************************animation*************************************************** */
+
+/* resource */
+
+.gmbr-reso {
+  --s: 200px; /* the size of the image */
+  --b: 0px; /* the border thickness*/
+  --g: 0px; /* the gap */
+  --c: black; /* the color */
+
+  width: var(--s);
+  aspect-ratio: 1;
+  outline: calc(var(--s) / 2) solid #0009;
+  outline-offset: calc(var(--s) / -2);
+  cursor: pointer;
+  transition: 0.3s;
+
+  outline: calc(var(--s) / 2) solid #0009;
+  outline-offset: calc(var(--s) / -2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* akhir resource */
+.gmbr-reso:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
+
+/* ********************************mediaqueary*************************************************** */
+
+@media only screen and (min-width: 1000px) {
+  /* footer */
+  .logo-footer {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .alert {
+    font-size: 12px;
+  }
+
+  .navbar-toggler {
+    margin-right: auto;
+  }
+
+  .hr {
+    width: 100px;
+  }
+
+  /* index */
+  .gmbr-index {
+    width: 100%;
+  }
+
+  /* about */
+
+  .font-judul {
+    font-size: 40px;
+  }
+
+  .logo-brand {
+    width: 100%;
+  }
+
+  .logo-brand2 {
+    width: 90%;
+  }
+
+  /* contactus */
+
+  .judul-about {
+    font-size: 40px;
+  }
+
+  /* resource */
+
+  .gmbr-reso {
+    --s: 150px; /* the size of the image */
+    --b: 0px; /* the border thickness*/
+    --g: 0px; /* the gap */
+    --c: black; /* the color */
+  }
+
+  /* footer */
+  .logo-footer {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .text-promo {
+    text-align: right !important;
+  }
+  .text-promo1 {
+    margin: 0;
+    text-align: center !important;
+  }
+  .text-promo2 {
+    text-align: left !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* about */
+  .gbr-ctr {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  /* footer */
+  .logo-footer {
+    width: 50%;
+  }
+  /* index */
+  .text-promo {
+    text-align: center !important;
+  }
+  .text-promo1 {
+    margin: 0;
+    text-align: center !important;
+  }
+  .text-promo2 {
+    text-align: center !important;
+  }
+  /* contact us */
+  .cus {
+    margin-top: -3em !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .logo-footer {
+    width: 70%;
+  }
+}
+
+/* product */
+
+@media only screen and (max-width: 400px) {
+  .hr {
+    width: 30px;
+  }
+
+  /* contactus */
+  .judul-about {
+    font-size: 25px;
+  }
+
+  #gambar-brand {
+    width: 100px;
+  }
+
+  /* footer */
+  .logo-footer {
+    width: 80%;
+  }
+}
+
+/*  about */
+
+@media only screen and (max-width: 768px) {
+  .gbr-ctr {
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    vertical-align: center !important;
+  }
+
+  .gambar-about1 {
+    width: 100%;
+  }
+}
+
+/* akhir about */
+
+/* contactus */
+
+.peta {
+  width: 100%;
+  height: 22.5em;
+}
+.peta-contact {
+  width: 100%;
+  height: 100%;
+}
+
+/* akhir contactus */
+
+/* product */
+.coba {
+  display: none;
+  opacity: 0;
+}
+.nav-cart {
+  cursor: pointer;
+}
+
+#your-cart-css {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1200;
+  display: flex;
+  flex-direction: column;
+  width: 0%;
+  visibility: visible;
+  height: 100%;
+  background-color: #fff;
+  background-clip: padding-box;
+  outline: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.gambar-product {
+  width: 100%;
+  height: auto;
+  max-height: 60vh;
+  z-index: 0;
+}
+.background-product {
+  background-color: #b6a18e;
+}
+
+.button-add-to-cart {
+  border: none;
+  transition-duration: 0.5s;
+  padding: 0.5em 1em;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.button-add-to-cart:hover {
+  border: none;
+  transition-duration: 0.5s;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+}
+/* akhir product */
+
+/* signin */
+.signin {
+  width: 80%;
+  max-width: 40em;
+  margin: auto;
+  filter: blur(none);
+}
+/* .form-control {
+  min-width: 10em;
+} */
+
+.modal-img {
+  width: auto;
+  max-width: 300px;
+}
+/* akhir signin */
+
+/* footer */
+footer {
+  bottom: 0;
+  background-color: gray;
+  padding: 2em 5em;
+}
+
+/* akhir footer */

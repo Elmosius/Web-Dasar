@@ -1,0 +1,480 @@
+<!-- 
+    Nama team = Celvin's (Case Elmo Kevin'  Store)
+    Tema =  Small-Medium Enterprise (Jual Case HP)
+    Member :
+    1. 2272008 - Elmosius Suli
+    2. 2272007 - Kevin Owen
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <!-- cdn font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Prompt:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Project UAS</title>
+  </head>
+  <body onLoad="preLoad()">
+    <!-- alert -->
+    <section class="p-1 m-0 text-center fw-light alert-atas alert">Promos! Product Up To 30% Off</section>
+    <!-- akhir alert -->
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-lighter sticky-top p-3 navbar-index-product" onscroll="navscroll()">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-bolder" href="home.html">Celvin's</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto fw-bold">
+            <li class="nav-item">
+              <a class="nav-link me-4 navbar-effect" aria-current="page" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4 navbar-effect" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4 navbar-effect" href="contactus.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand" href="index.html">
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </a>
+        <a class="navbar-brand nav-cart" type="button button-cart" onclick="openYourCart();">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- akhir navbar -->
+
+    <!-- Hero -->
+    <div data-aos="fade-down" data-aos-duration="1500">
+      <img src="img/product.png" alt="" class="gambar-product" />
+    </div>
+
+    <!-- Akhir hero -->
+
+    <!-- button cart -->
+    <div id="your-cart-css">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+        <button type="button" class="btn-close mt-5 me-5" onclick="closeYourCart();"></button>
+      </div>
+      <div class="offcanvas-body mt-3">
+        <div class="row text-center">
+          <div class="col">
+            <h3 class="fw-bold mb-5 text-center">Your Cart</h3>
+            <hr class="mt-3 margin-0auto opacity-100 mb-2" width="90%" size="3px" color="black" />
+
+            <div class="row text-center mt-3">
+              <div class="col-6">Product</div>
+              <div class="col-2">Price</div>
+              <div class="col-3">Quantity</div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <hr class="mt-3 margin-0auto opacity-100 mb-2" width="90%" size="3px" color="black" />
+              </div>
+            </div>
+            <form method="post" action="" onsubmit="sendEmail(); reset(); return false;">
+              <div class="row cart text-center margin-0auto"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir button cart -->
+
+    <!-- Product -->
+    <section>
+      <div class="container">
+        <div class="row justify-content-around background-product pt-3 pb-3 item-cart">
+          <div class="col-md-4 text-center my-auto">
+            <div data-aos="fade-right" data-aos-duration="2000">
+              <img src="https://lzd-img-global.slatic.net/g/p/6fcd867fe71caf2d1c08bd43214a807f.jpg_2200x2200q80.jpg_.webp" alt="" class="src w-100" id="gambar-product" />
+            </div>
+          </div>
+          <div class="col-md-4 my-auto">
+            <div data-aos="fade-right" data-aos-duration="2000">
+              <h1 class="alert-atas fw-bold mt-3">Flower Case</h1>
+              <h6 class="mt-3">Flower case is a casing with a floral theme. In the ones we sell, some provide print cases and accessories that make the cases cute and beautiful.</h6>
+              <br />
+
+              <!-- Button trigger modal -->
+              <button type="button" class="text-decoration-none button-add-to-cart rounded-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade modal-container" id="exampleModal" tabindex="-1 " aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-3 product-name" id="exampleModalLabel">Flower Case</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <form autocomplete="off" id="myForm">
+                        <div class="row">
+                          <div class="col-md">
+                            <img src="https://lzd-img-global.slatic.net/g/p/6fcd867fe71caf2d1c08bd43214a807f.jpg_2200x2200q80.jpg_.webp" alt="prd2" class="modal-img mb-3 img-cart product-img" id="a" />
+                            <h5 class="product-name d-none">Flower Case</h5>
+                          </div>
+                          <div class="col-md">
+                            <h5>Choose your flower case.</h5>
+                            <h7> if you want a cellphone case that is as beautiful as a flower this is the right choice. </h7>
+                            <h6 class="opacity-75 mt-2 product-price d-none">5,00</h6>
+                            <h6 class="opacity-75 mt-2">$ 5,00</h6>
+                            <div class="row">
+                              <div class="col-md-3 mt-2">
+                                <div class="form-check" autocomplete="off">
+                                  <input class="form-check-input" type="radio" name="productA" id="radio-1" onclick="im('a1');" checked value="1" />
+                                  <label class="form-check-label" for="flexRadioDefault1"> 1. </label><br />
+                                  <input class="form-check-input" type="radio" name="productA" id="radio-2" onclick="im('a2');" value="2" />
+                                  <label class="form-check-label" for="flexRadioDefault1"> 2. </label><br />
+                                  <input class="form-check-input" type="radio" name="productA" id="radio-3" onclick="im('a3');" value="3" />
+                                  <label class="form-check-label" for="flexRadioDefault1"> 3. </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="text-decoration-none button-add-to-cart rounded-5" data-action="add-to-cart" value="productA">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Akhir Modal -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row justify-content-around background-product pt-3 pb-3">
+          <div class="col-md-4 text-center">
+            <div data-aos="fade-left" data-aos-duration="2000">
+              <img src="https://id-live-01.slatic.net/p/cc8763a6613530eb30082ca83e1d1ebc.jpg" alt="" class="src w-100" />
+            </div>
+          </div>
+          <div class="col-md-4 my-auto">
+            <div data-aos="fade-left" data-aos-duration="2000">
+              <h1 class="alert-atas fw-bold my-auto mt-3">Japanese Art Case</h1>
+              <h6 class="mt-3">The Japanese Art Case is a Japanese-themed case, we design it from the writing, the buildings, and also Japanese films, all of which we make with the old style.</h6>
+              <br />
+              <!-- Button trigger modal -->
+              <button type="button" class="text-decoration-none button-add-to-cart rounded-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">Buy Now</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade modal-container" id="exampleModal1" tabindex="-1 " aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="exampleModalLabel">Japanese Art Case</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <form autocomplete="off">
+                        <div class="row">
+                          <div class="col-md">
+                            <div class="mb-3 product">
+                              <img src="https://id-live-01.slatic.net/p/cc8763a6613530eb30082ca83e1d1ebc.jpg" alt="prd1" class="modal-img mb-3 product-img" id="b" />
+                              <h5 class="product-name d-none">Japanese Art Case</h5>
+                            </div>
+                          </div>
+                          <div class="col-md">
+                            <h5>Choose your Japanese Art Case</h5>
+                            <h7> if you are a fan of Japanese art, this case is the right thing for you.</h7>
+                            <h6 class="opacity-75 mt-2 product-price d-none">5,00</h6>
+                            <h6 class="opacity-75 mt-2">$ 5,00</h6>
+                            <div class="row">
+                              <div class="col-md-3 mt-2">
+                                <div class="form-check" autocomplete="off">
+                                  <input class="form-check-input" type="radio" name="productB" id="flexRadioDefault1" onclick="im('b1');" checked value="1" />
+                                  <label class="form-check-label" for="flexRadioDefault"> 1. </label><br />
+                                  <input class="form-check-input" type="radio" name="productB" id="flexRadioDefault1" onclick="im('b2');" value="2" />
+                                  <label class="form-check-label" for="flexRadioDefault"> 2. </label><br />
+                                  <input class="form-check-input" type="radio" name="productB" id="flexRadioDefault1" onclick="im('b3');" value="3" />
+                                  <label class="form-check-label" for="flexRadioDefault"> 3. </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="text-decoration-none button-add-to-cart rounded-5" data-action="add-to-cart" value="productB">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Akhir Modal -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row justify-content-around background-product pt-3 pb-3">
+          <div class="col-md-4 text-center">
+            <div data-aos="fade-right" data-aos-duration="2000">
+              <img src="https://i.ebayimg.com/images/g/gDwAAOSw5YVf7hF9/s-l500.jpg" alt="" class="src w-100" />
+            </div>
+          </div>
+          <div class="col-md-4 my-auto">
+            <div data-aos="fade-right" data-aos-duration="2000">
+              <h1 class="alert-atas fw-bold my-auto mt-3">Celvin's Case</h1>
+              <h6 class="mt-3">What is different from the designs we offer from before. This design is our signature design where we create a design theme according to our aesthetic motto.</h6>
+              <br />
+              <!-- Button trigger modal -->
+              <button type="button" class="text-decoration-none button-add-to-cart rounded-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">Buy Now</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade modal-container" id="exampleModal2" tabindex="-1 " aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="exampleModalLabel">Celvin's Case</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <form autocomplete="off">
+                        <div class="row">
+                          <div class="col-md">
+                            <img src="https://i.ebayimg.com/images/g/gDwAAOSw5YVf7hF9/s-l500.jpg" alt="prd3" class="modal-img mb-3 img-cart product-img" id="c" />
+                            <h5 class="product-name d-none">Celvin's Case</h5>
+                          </div>
+                          <div class="col-md">
+                            <h5>Choose your Celvin's Case</h5>
+                            <h7> if you want a different casing design this option is the right one.</h7>
+                            <h6 class="opacity-75 mt-2 product-price d-none">6,00</h6>
+                            <h6 class="opacity-75 mt-2">$ 6,00</h6>
+                            <div class="row">
+                              <div class="col-md-3 mt-2">
+                                <div class="form-check" autocomplete="off">
+                                  <input class="form-check-input" type="radio" name="productC" id="flexRadioDefault1" onclick="im('c1');" checked value="1" />
+                                  <label class="form-check-label" for="flexRadioDefault"> 1. </label><br />
+                                  <input class="form-check-input" type="radio" name="productC" id="flexRadioDefault1" onclick="im('c2');" value="2" />
+                                  <label class="form-check-label" for="flexRadioDefault"> 2. </label><br />
+                                  <input class="form-check-input" type="radio" name="productC" id="flexRadioDefault1" onclick="im('c3');" value="3" />
+                                  <label class="form-check-label" for="flexRadioDefault"> 3. </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="text-decoration-none button-add-to-cart rounded-5 add" data-action="add-to-cart" value="productC">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Akhir Modal -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row justify-content-around background-product pt-3 pb-3">
+          <div class="col-md-4 text-center">
+            <div data-aos="fade-left" data-aos-duration="2000">
+              <img src="https://cf.shopee.co.id/file/2bd36ae82d8b931e3b5251c32c03161b" alt="prd4" class="src w-100 product-img" />
+            </div>
+          </div>
+          <div class="col-md-4 my-auto">
+            <div data-aos="fade-left" data-aos-duration="2000">
+              <h1 class="alert-atas fw-bold product-name my-auto mt-3">Custom Case</h1>
+              <h6 class="opacity-75 mt-2 product-price d-none">5,00</h6>
+              <h6 class="mt-3">According to the name custom case, if you are not interested in what we provide, you can use the best design made by yourself.</h6>
+              <br />
+
+              <!-- Button trigger modal -->
+              <button type="button" class="text-decoration-none button-add-to-cart rounded-5" data-bs-toggle="modal" data-bs-target="#exampleModal3">Buy Now</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade modal-container" id="exampleModal3" tabindex="-1 " aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="exampleModalLabel">Celvin's Case</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <form autocomplete="off">
+                        <div class="row">
+                          <div class="col-md">
+                            <img src="https://cf.shopee.co.id/file/7765167b0076636743d64ee446dd4d25" alt="prd4" class="modal-img mb-3 img-cart product-img" id="d" />
+                            <h5 class="product-name d-none">Custom Case</h5>
+                          </div>
+                          <div class="col-md">
+                            <h5>Choose Material</h5>
+                            <h7> For those who want to make a casing with their own design.</h7>
+                            <h6 class="opacity-75 mt-2 product-price d-none">5,00</h6>
+                            <h6 class="opacity-75 mt-2">$ 5,00</h6>
+                            <div class="row">
+                              <div class="col-md-5 mt-2">
+                                <div class="form-check" autocomplete="off">
+                                  <input class="form-check-input" type="radio" name="productD" id="flexRadioDefault2" onclick="im('d1');" checked value="1" />
+                                  <label class="form-check-label" for="flexRadioDefault"> 1. Soft Case </label><br />
+                                  <input class="form-check-input" type="radio" name="productD" id="flexRadioDefault2" onclick="im('d2');" value="2" />
+                                  <label class="form-check-label" for="flexRadioDefault"> 2. Hard Case</label><br />
+                                  <input class="form-check-input" type="radio" name="productD" id="flexRadioDefault2" onclick="im('d3');" value="3" />
+                                  <label class="form-check-label" for="flexRadioDefault"> 3. Fuze Case</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="text-decoration-none button-add-to-cart rounded-5 add" data-action="add-to-cart" value="productD">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Akhir Modal -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row justify-content-around background-product pt-3 pb-3">
+          <div class="col-md-4 text-center">
+            <div data-aos="fade-right" data-aos-duration="2000">
+              <img src="https://cdn.shopify.com/s/files/1/0582/3165/2504/products/84.jpg?v=1663067284&width=1946" alt="" class="src w-100" />
+            </div>
+          </div>
+          <div class="col-md-4 my-auto">
+            <div data-aos="fade-right" data-aos-duration="2000">
+              <h1 class="alert-atas fw-bold mt-3">Coming Soon !</h1>
+              <h6 class="mt-3">(enter inspiration suggestions put in contact)</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- akhir product -->
+
+    <!-- akhir live toast -->
+
+    <!-- footer -->
+    <footer>
+      <div class="alert-atas">
+        <div class="row">
+          <div class="col-md-4 d-block">
+            <img src="img/logo-trans.png" class="logo-footer" alt="..." />
+            <h5>Casing Elmo Kevin Store</h5>
+            <a href="https://www.paypal.com/id/signin" class="link-dark text-decoration-none me-3" target="_blank">
+              <i class="fa-brands fa-paypal"></i>
+            </a>
+            <a href="https://www.mastercard.com/marketingcenter/" class="link-dark text-decoration-none me-3" target="_blank">
+              <i class="fa-brands fa-cc-mastercard"></i>
+            </a>
+            <a
+              href="https://www.visaonline.com/login/LoginMain.aspx?realm=vol&goto=https%3A%2F%2Fsecure.visaonline.com%3A443%2Fagent%2Fcustom-login-response%3Fstate%3DPtWx7UpCa28nFBLx5GO1D1xJYow%26realm%3Dvol&original_request_url=https%3A%2F%2Fsecure.visaonline.com%3A443%2F"
+              class="link-dark text-decoration-none me-3"
+              target="_blank"
+            >
+              <i class="fa-brands fa-cc-visa"></i>
+            </a>
+            <a href="https://www.apple.com/apple-pay/" class="link-dark text-decoration-none" target="_blank"><i class="fa-brands fa-cc-apple-pay"></i></a>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md d-block fw-bold mt-4">
+            <h4 class="">Social</h4>
+            <h6>Follow our social media.</h6>
+            <a href="https://www.instagram.com/elmosius/" class="link-dark text-decoration-none" target="_blank">
+              <i class="fa-brands fa-instagram me-2"></i>
+            </a>
+            <a href="https://www.instagram.com/kvinown/" class="link-dark ms-1" target="_blank">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </div>
+          <div class="col-md d-block fw-bold mt-4">
+            <h4 class="">Support</h4>
+            <a href="contactus.html" class="text-decoration-none link-dark" target="_blank"><h6>Contact</h6></a>
+            <a href="about.html" class="text-decoration-none link-dark" target="_blank"><h6>About</h6></a>
+          </div>
+        </div>
+        <hr class="mt-5" color="black" size="4px" width="100%" style="opacity: 80%" />
+        <div class="row">
+          <div class="col-md mt-2 mb-4">&copy; 2022 Celvin by Elmosius Suli & Kevin Owen made with ♡</div>
+        </div>
+      </div>
+    </footer>
+    <!-- akhir footer -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <!-- javascript -->
+
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+
+    <!-- email -->
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- js aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
