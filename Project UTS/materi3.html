@@ -1,0 +1,791 @@
+<!-- Team Wangy
+    Elmosius Suli - 2272008
+    Joseph Adiwiguna - 2272020 --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi 3</title>
+    <link rel="stylesheet" type="text/css"href="CSS/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <span class="bgmateri3"></span>
+    <div class="header">
+        <a href="home.php"><img class="logowangy" src="images/tw2.png"></a>
+        <div class="headersentence">
+        <td><a class="linking4" href="home.php">HOME</a></td>
+        <td><a class="linking4" href="aboutus.html">ABOUT US</a></td>
+        <td><a class="linking4" href="home.php#materi">MATERI</a></td> </div> 
+    </div>
+    
+    <div class="containermateri3"></div>
+    <span class="titlemateri3">Form & PHP</span>
+    <span class="titlemateri3a">HTML lanjutan serta juga sedikit bahasa PHP</span>
+
+    <hr class="linec"></hr>
+    <span class="barc1">Form & PHP</span>
+    <span class="barc2">
+        <h2>Tag Form (&#60;from&#62;)</h2>
+        Tag form merupakan tag yang digunakan saat kita akan membuat sebuah form dalam HTML.
+        <!-- https://css-tricks.com/considerations-styling-pre-tag/  -->
+        <pre>
+            <div class="back-1b">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+                    &#60;form name="" method="get" action="" target=""&#62;
+                    &#60;/form &#62;</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>
+        
+        Dalam tag form kita dapat menggunakan 
+        atribut name, atribut action, dan atribut method dengan value get dan post. Saat kita menggunakan <b> method get maka
+        data/nilai akan ditampilkan pada URL, lalu ditampung oleh action </b> sedangkan <b>method post maka data atau nilai langsung ke 
+        action untuk ditampung, tanpa menampilkan pada URL</b>. Selain itu juga, kita dapat menggunakan atribut target pada form kita.
+        
+        <h2>Tag Input(&#60;input&#62;)</h2>
+        Tag input merupakan tag yang digunakan saat kita mau memasukan input kedalam halaman HTML kita. 
+        Dalam tag input, terdapat atribut type dan value dari atribut type dapat disesuaikan dengan input yang akan dimasukan. 
+        Value dari atribut type adalah </p>
+        <ul>
+            <li><b>Text</b></li>
+        </ul>         
+        Type text merupakan value yang membuat pengguna dapat memasukan input berupa text dalam form di website kita.   
+        <pre>
+            <div class="back-1b"><b>
+                &#60;form&#62;
+                Nama anda: &#60;input type="text"&#62;
+                &#60;/form&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil :</h3>
+                <samp>
+                    &nbsp;Nama Anda:<input type="text">
+                </samp>
+        </div><br>
+
+     <!-- Tag Textarea -->
+        <h2>Tag Textarea</h2>
+        Tag textarea merupakan tag yang berfungsi seperti type text tetapi tempat untuk menginput data melebihi dari 1 baris.
+        Untuk <b>membatasi jumlah baris yang bisa diinput, kita dapat menggunakan atribut rows</b> dan juga untuk <b>memperbesar textarea, 
+        kita dapat menggunakan atribut cols</b>.<br><br>
+        Contoh dari penggunaan tag textarea dapat dilihat di bawah :
+
+        <pre>
+            <div class="back-1b"><b>
+                Masukan Komentar Anda: 
+                &#60;textarea rows="4" cols="50"&#62;
+                &#60;/textarea&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil :</h3>
+                <samp>
+                    &nbsp;Masukan Komentar Anda:
+                    <textarea rows="4" cols="50" >
+                    </textarea> 
+                </samp>
+        </div><br>          
+        
+        <li><b>Password</b><br><br></li>
+        Type password merupakan value yang membuat pengguna dapat memasukan input berupa pass dalam sebuah form pada website kita. 
+        Saat menggunakan type password, kita hanya melihat input yang kita masukan berubah menjadi simbol. 
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;form&#62;
+                Masukan Password: &#60;input type="password"&#62;
+                &#60;/form&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil :</h3>
+                <samp>
+                    &nbsp; Masukan Password: <input type="password">
+                </samp>
+        </div><br>          
+
+        <li><b>Submit</b><br><Br></li>
+        Type submit merupakan value yang digunakan oleh pengguna untuk mengirimkan input yang telah dimasukan pada website kita.
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;form&#62;
+                &#60;input type="submit value="Kirim"&#62;
+                &#60;/form&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil :</h3>
+                <samp>
+                    &nbsp;<input type="submit" Value="Kirim">
+                </samp>
+        </div><br>       
+
+        <li><b>Reset</b><br><br></li>
+        Type reset merupakan value yang digunakan oleh pengguna untuk menghapus semua input yang telah dimasukan pada website kita. 
+        Type reset hanya berfungsi untuk input yang dimasukan oleh pengguna saja dan input yang sudah otomatis dimasukan oleh computer 
+        tidak akan terhapus. 
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;form&#62;
+                &#60;input type="reset" Value="Reset"&#62;
+                &#60;/form&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil :</h3>
+                <samp>
+                    &nbsp;<input type="reset" Value="Reset">
+                </samp>
+        </div><br>      
+
+        <li><b>Hidden</b><br><br></li>
+        Type hidden merupakan value yang digunakan pada atribut type untuk menampilkan input yang tidak dapat terlihat pada website 
+        kita.
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;form&#62;
+                &#60;input type="hidden"&#62;
+                &#60;/form&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil : (coba di inspect)</h3>
+                <samp >
+                    &nbsp;&nbsp;<input type="hidden" >
+                </samp>
+        </div><br>     
+
+        <li><b>Number</b><br><br></li>
+        Type number merupakan value yang digunakan saat input yang dimasukan hanya berupa angka saja sehingga input huruf ataupun 
+        lainnya tidak dapat dimasukan pada type ini. Kita dapat menggunakan <b>atribut min dan max untuk menentukan nilai minimal dan 
+        maksimal</b> dari type number. Selain itu juga, kita dapat menggunakan <b>atribut step untuk menentukan interval antara 2 bilangan.</b>
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;form&#62;
+                Pilih Angka: &#60;input type="number" min="-5" max="5"&#62;
+                &#60;/form&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil :</h3>
+                <samp >
+                    &nbsp;&nbsp;Pilih Angka: <input type="number"min="-5" max="5">
+                </samp>
+        </div><br>     
+
+        <li><b>Range</b><br><br></li>
+        Type range merupakan value yang digunakan untuk membuat pengguna memberikan input menggunakan sebuah glider. 
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;form&#62;
+                &#60;input type="range"&#62;
+                &#60;/form&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil : </h3>
+                <samp>
+                    &nbsp;&nbsp;<input type="range">
+                </samp>
+        </div><br>   
+        
+        <li><b>File</b><br><br></li>
+        Type file merupakan value yang digunakan untuk membuat pengguna memberikan input kepada website dalam bentuk file. 
+        Kita dapat menggunakan atribut multiple agar kita dapat memberikan input file lebih dari 1 input. 
+        
+        <pre>
+            <div class="back-1b"><b>
+                &#60;form&#62;
+                &#60;input type="file"&#62;
+                &#60;/form&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil : </h3>
+                <samp>
+                    &nbsp;&nbsp;<input type="file">
+                </samp>
+        </div><br>   
+
+        <li><b>Image</b><br><br></li>
+        Type image merupakan value yang digunakan untuk membuat button dengan gambar image tersebut. 
+        Kita dapat menggunakan atribut seperti pada tag img agar gambar dapat muncul dan terlihat sesuai dengan keinginan kita.
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;form&#62;
+                &#60;input type="image" src="https://cdn-icons-png.flaticon.com/512/2680/2680985.png" alt="Submit" width="100px" height="100px"&#62;
+                &#60;/form&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil : </h3>
+                <samp>
+                    &nbsp;&nbsp;<input type="image" class="hidden" src="https://cdn-icons-png.flaticon.com/512/2680/2680985.png" alt="Submit" class="inmage">
+                </samp>
+        </div><br>   
+
+        <li><b>Color</b><br><br></li>
+        Type color merupakan value yang digunakan untuk membuat pengguna memberikan input kepada website dalam bentuk warna sehingga 
+        input yang akan muncul adalah warna
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;form&#62;
+                Masukan Warna:&#60;input type="color"&#62;
+                &#60;/form&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil : </h3>
+                <samp>
+                    &nbsp;&nbsp;Masukan Warna:<input type="color">
+                </samp>
+        </div><br>  
+       
+        <li><b>Date</b><br><br></li>
+        Type date merupakan value yang digunakan untuk membuat pengguna memberikan input kepada website dalam bentuk tanggal. 
+        Kita dapat menggunakan <b>atribut min dan max untuk menentukan tanggal minimal dan tanggal maksimal yang dapat kita masukan</b> pada 
+        input.
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;form&#62;
+                Masukan Tanggal hari ini:&#60;input type="date"&#62;
+                &#60;/form&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil : </h3>
+                <samp>
+                    &nbsp;&nbsp;Masukan Tanggal hari ini: <input type="date">
+                </samp>
+        </div><br> 
+        
+        <li><b>Time</b><br><br></li>
+        Type local merupakan value yang digunakan untuk membuat pengguna memberikan input kepada website dalam bentuk jam. 
+        
+        <pre>
+            <div class="back-1b"><b>
+                &#60;form&#62;
+                Masukan Jam:&#60;input type="time"&#62;
+                &#60;/form&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil : </h3>
+                <samp>
+                    &nbsp;&nbsp;Masukan Jam: <input type="time">
+                </samp>
+        </div><br> 
+
+        <li><b>Datetime-local</b><br><br></li>
+        Type datetime-local merupakan gabungan antara type date dan time. 
+        Kita juga <b>dapat menggunakan atribut min dan max</b> untuk menentukan tanggal minimal 
+        dan tanggal maksimal yang dapat kita masukan pada input tersebut. 
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;form&#62;
+                Masukan Tanggal & Jam:&#60;input type="datetime-local"&#62;
+                &#60;/form&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil : </h3>
+                <samp>
+                    &nbsp;&nbsp;Masukan Tanggal & Jam: <input type="datetime-local">
+                </samp>
+        </div><br> 
+
+        Saat kita akan menggunakan tag input, kita dapat menggunakan beberapa atribut yang dapat memodifikasi input yang akan diterima. 
+        Atribut yang dapat kita gunakan adalah <br><br>
+        <table class="intab">
+            <tr>
+                <td>Name</td>
+                <td>:</td>
+                <td>Untuk menuliskan id dari sebuah bagian.</td>
+            </tr>
+            <tr>
+                <td>Value </td>
+                <td>:</td>
+                <td>Untuk menuliskan isi dari input text secara otomatis</td>
+            </tr>
+            <tr>
+                <td>Readonly</td>
+                <td>:</td>
+                <td>Untuk membuat input dari value tidak dapat dirubah oleh pengguna</td>
+            </tr>
+            <tr>
+                <td>Disabled </td>
+                <td>:</td>
+                <td>Untuk membuat input pada form tidak dapat diakses oleh pengguna</td>
+            </tr>
+            <tr>
+                <td>Maxlength </td>
+                <td>:</td>
+                <td>Untuk membatasi jumlah input yang masuk pada tag input</td>
+            </tr>
+            <tr>
+                <td>Required </td>
+                <td>:</td>
+                <td>Untuk membuat sebuah input harus diisi oleh pengguna </td>
+            </tr>
+            <tr>
+                <td>Placeholder </td>
+                <td>:</td>
+                <td>Untuk memberikan deskripsi singkat pada kolom input. Saat kita menggunakan atribut ini, kita tidak dapat menggunakan 
+                    atribut value agar placeholder dapat terlihat. </td>
+            </tr>
+        </table><br>
+
+        Dalam penggunaan tag input, terdapat beberapa type yang memungkinkan kita untuk memilih input dari pilihan input yang telah 
+        disediakan pada website. Type yang dimaksud adalah : <br><br>
+
+        <li><b>Radiobutton</b></li>
+        Type radiobutton merupakan type yang digunakan pada website kita untuk memberikan pilihan input dalam bentuk button lingkaran. 
+        Untuk penggunaan type radiobutton, kita hanya dapat memberikan 1 input saja. <br><br>
+        Di bawah ini merupakan contoh Penggunaan Radiobutton
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;h3&#62;Pilihlah makanan yang enak dimakan:&#60;/h3&#62;
+                &#60;input type="radio" name="makanan" value="NasiGoreng"&#62;Nasi Goreng
+                &#60;input type="radio" name="makanan" value="MieGoreng"&#62;Mie Goreng
+                &#60;input type="radio" name="makanan" value="BihunGoreng"&#62;Bihun Goreng
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil : </h3>
+                <samp>
+                    <h3>Pilihlah makanan yang enak dimakan:</h3>
+                    <input type="radio" name="makanan" value="NasiGoreng">Nasi Goreng
+                    <input type="radio" name="makanan" value="MieGoreng">Mie Goreng
+                    <input type="radio" name="makanan" value="BihunGoreng">Bihun Goreng
+                </samp>
+        </div><br> 
+
+        <span class="tips1b"><b><i>Tips</i></b> :Pada type ini, kita dapat menggunakan atribut name sebagai id dari tag input kita dan atribut value untuk jawaban yang akan 
+        dimunculkan pada website. Pada type ini juga, kita <b>harus</b> menggunakan atibut name yang sama agar hanya salah satu pilihan saja 
+        yang dapat dipilih.</span><br><br>
+
+        <li><b>Check Box</b></li>
+        Type checkbox merupakan type yang digunakan pada website kita untuk memberikan pilihan input dalam bentuk kotak checklist. 
+        Pada type ini, kita dapat memasukan lebih dari 1 input. 
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;h3&#62;Pilihlah makanan yang enak dimakan:&#60;/h3&#62;
+                &#60;input type="checkbox" name="makanan" value="NasiGoreng"&#62;Nasi Goreng
+                &#60;input type="checkbox" name="makanan" value="MieGoreng"&#62;Mie Goreng
+                &#60;input type="checkbox" name="makanan" value="BihunGoreng"&#62;Bihun Goreng
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil : </h3>
+                <samp>
+                    <h3>Pilihlah makanan yang enak dimakan:</h3>
+                    <input type="checkbox" name="makanan1" value="NasiGoreng">Nasi Goreng
+                    <input type="checkbox" name="makanan2" value="MieGoreng">Mie Goreng
+                    <input type="checkbox" name="makanan3" value="BihunGoreng">Bihun Goreng
+                </samp>
+        </div><br> 
+
+        <span class="tips1b"><b><i>Tips</i></b> : Pada type ini, kita dapat menggunakan atribut name sebagai id dari tag input kita dan atribut value untuk jawaban yang akan 
+        dimunculkan pada website. Pada type ini juga, kita harus menggunakan atibut name yang berbeda agar pilihan yang dipilih bisa 
+        banyak tetapi jika kita ingin hanya dapat memilih 1pilihan, kita dapat menggunakan value name yang sama. 
+        Selain itu juga, kita dapat menggunakan <b>atribut check</b> untuk menchecklist otomatis kotak checkbox yang ada pada website 
+        kita.</span><br><br>
+
+        <li><b>Combobox</b></li>
+        Type combobox merupakan type yang digunakan pada website kita untuk memberitkan pilihan input dalam bentuk kotak pilihan. 
+        Pada type ini, kita hanya dapat memasukan 1 input saja ataupun lebih dari 1 input.<br><br>
+        Contoh Penggunaan Comobox adalah
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;b&#62;Makanan yang enak dimakan:&#60;/b&#62; 
+                    &#60;select&#62;
+                    &#60;optgroup label="Pilihan"&#62;
+                        &#60;option value="NasiGoreng"&#62;Nasi Goreng&#60;/option&#62;
+                        &#60;option value="MieGoreng"&#62;Mie Goreng&#60;/option&#62;
+                        &#60;option value="BihunGoreng"&#62;Bihun Goreng&#60;/option&#62;
+                    &#60;/optgroup&#62;
+                &#60;/select&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil : </h3>
+                <samp>
+                    &nbsp;&nbsp;<b>Makanan yang enak dimakan:</b>
+                    <select>
+                        <optgroup label="Pilihan">
+                            <option value="NasiGoreng">Nasi Goreng</option>
+                            <option value="MieGoreng">Mie Goreng</option>
+                            <option value="BihunGoreng">Bihun Goreng</option>
+                        </optgroup>
+                    </select>
+                </samp>
+        </div><br> 
+
+        <span class="tips1b"><b><i>Tips</i></b> :Pada type ini, kita dapat menggunakan tag select lalu menggunakan tag option. Setelah itu, kita dapat menggunakan atribut value 
+        dan menuliskan pilihan input yang akan kita masukan ke dalam comobox. 
+        Untuk membuat judul pada comobox kita dapat memasukan tag optgroup lalu atribut label dengan value nama dari judul sehingga saat 
+        kita membuka comobox di website kita, kita akan melihat judul copada comobox yang ada pada website kita. 
+        Untuk menampilkan berapa banyak pilihan yang akan ditampilkan pada comobox, kita dapat menggunakan atribut size dengan value 
+        sesuai keinginan kita sehingga saat kita meliha comobox, comobox akan menampilkan beberapa pilihan sesuai dengan value yang 
+        dimasukan pada size. Selain itu juga, untuk memilih lebih dari 1 input pada comobox, kita dapat menggunakan atribut multiple. 
+        Dalam penggunaan beberapa type diatas, jika kita ingin menampilkan beberapa pilihan pada website kita maka kita harus memasukan 
+        manual beberapa tag input dengan type diatas agar pilihan input yang ingin kita munculkan dapat masuk ke dalam website kita. </span><br><Br>
+        Untuk membuat form kita menjadi lebih rapih, kita dapat menggunakan tag fieldset dan juga tag legend. 
+
+        <h2>Tag Fieldset (&#60;fieldset&#62;)</h2>   
+        Tag ini merupakan tag yang berfungsi untuk mengkotakan form yang ada pada halaman website kita. 
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;fieldset&#62;
+                    &#60;form name="" method="get" action="" target=""&#62;
+                    Masukan Nama: &#60;input type="text" &#62;
+                    &#60;/form &#62;
+                &#60;/fieldset&#62;
+                &#60;/select&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil : </h3>
+                <samp>
+                    <fieldset>
+                        <form name="" method="get" action="" target="">
+                            &nbsp;&nbsp;Masukan Nama: <input type="text" >
+                        </form >
+                        
+                    </fieldset>
+                </samp>
+        </div><br> 
+
+        <h2>Tag legend (&#60;legend&#62;)</h2>
+        Tag legend berfungsi untuk memberikan judul pada bagian fieldset form kita. 
+
+        <pre>
+            <div class="back-1b"><b>
+                &#60;fieldset&#62;
+                    &#60;legend&#62;Form Pendataan&#60;/legend &#62;
+                        &#60;form name="" method="get" action="" target=""&#62;
+                        Masukan Nama: &#60;input type="text" &#62;
+                    &#60;/form &#62;
+                &#60;/fieldset&#62;
+            </div></b>
+        </pre>
+        <div class="back-2b">
+            <h3> &nbsp; Hasil : </h3>
+                <samp>
+                    <fieldset>
+                        <legend>Form Pendataan</legend>
+                            <form name="" method="get" action="" target="">
+                            Masukan Nama: <input type="text" >
+                        </form >
+                </samp>
+        </div><br> 
+
+    <!-- PHP -->
+
+        <h2>PHP</h2>
+        PHP (Hypertext Preprocessor) merupakan Bahasa server side scripting yang dapat digunakan oleh kita untuk membuat website kita menjadi lebih responsive 
+        dan kinerja yang dilakukan menjadi lebih bagus. Untuk menggunakan php, kita dapat menginstal xampp dahulu.Xampp merupakan sebuah aplikasi yang berfungsi sebagai server local/localhost yang dapat digunakan untuk membuka file PHP kita. 
+        Untuk menginstal xampp, kita dapat menginstalnya melalui google atau mengikuti panduan pada video di bawah :<br><br>
+
+        <iframe class="video" src="https://www.youtube.com/embed/qgStXnd9SVE"></iframe><Br>
+        (video dari Bu dosen tercinta hehe :D )<br><br>
+
+        Saat kita mau membuat file PHP pada komputer kita, kita dapat masuk kedalam file xampp lalu setelah kita menginstal xampp, 
+        kita masuk kedalam folder xampp pada drive kita. Setelah itu cari folder htdocs kemudian masuk kedalamnya. Lalu kita buat 
+        sebuah file yang akan menjadi tempat untuk menyimpan file PHP kita. File pada htdocs digunakan untuk membuka/menyimpan file php kita. 
+
+        Saat kita akan membuat file pPHP pada visual studio code, kita dapat menggunakan struktur seperti HTML tetapi pada bagian body, 
+        kita perlu menambahkan &#60;?php kemudian ditutup dengan ?&#62; agar computer mengetahui bahwa isi dari bagian body menggunakan bahasa php.
+
+        
+        <pre>
+            <div class="back-1b">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+                    &#60;?php &#62;
+                    
+                    
+                    &#60;? &#62;
+                </b>&#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>    
+    
+        Untuk menampilkan text atau kode HTML pada file PHP, kita dapat menuliskan dalam <b>echo</b> lalu text yang akan ditampilkan 
+        ditulis diantara <b>kutip dua (“)</b> lalu diakhiri dengan tanda <b>titik koma(;)</b>. 
+        Untuk contoh penggunaan Echo dapat dilihat pada contoh di bawah :
+
+        <pre>
+            <div class="back-1b">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+                    &#60;?php
+        
+                    Echo"Salam Kenal dari Team Wangy";
+                    Echo"&#60;br &#62;";
+                    
+                    ?&#62;
+                </b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>   
+        </pre>
+        <div class="back-2b">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                &nbsp; &nbsp;Salam Kenal dari Team Wangy
+            </samp>
+         </div><br>  
+
+         Selain itu juga, kita dapat menuliskan komentar pada file PHP menggunakan <b>tanda garis miring(/) sebanyak 2 </b> kali atau menggunakan 
+         <b>tanda hashtag/pagar(#)</b>. Jika kita akan memberikan comment lebih dari 1 baris maka kita dapat menggunakan <b>tanda garis miring dan 
+         bintang (/*)</b> kemudian ditutup dengan <b>tanda bintang dan garis miring (*/)</b>. 
+
+         <pre>
+            <div class="back-1b">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+                        &#60;?php 
+            
+                        // Tulisan ini dibuat oleh Team Wangy
+                        # Tulisan ini dibuat oleh Team Wangy
+                        /* Tulisan ini 
+                        dibuat oleh 
+                        Team Wangy*/
+                        
+                        Echo"Salam Kenal dari Team Wangy";
+                        
+                        ?&#62;</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>
+        <div class="back-2b">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                &nbsp; &nbsp;Salam Kenal dari Team Wangy
+            </samp>
+         </div><br> 
+
+         Selain itu juga, Variabel dapat kita gunakan untuk berbagai hal, mulai dari perhitungan matematika dasar
+         (Seperti Penambahan, Pengurangan, Perkalian, pembagian) hingga menyimpan data yang diinput pada form. 
+         Untuk menyambungkan sebuah kata dengan variabel pada echo, kita dapat menggunakan <b>tanda titik (.)</b>.
+         <br><br>
+         Contoh penggunaan variabel dapat diliihat pada contoh di bawah :
+
+         <pre>
+            <div class="back-1b">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+                        &#60;?php
+            
+                        $x=5;
+                        $y=8;
+                        $z=$x +$y;
+
+                        $nama="Wangy";
+
+                        Echo$z;
+                        Echo"&#60;br&#62;";
+                        Echo"Kami adalah Team" . $nama;
+                        
+                        ?&#62;</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>   
+        </pre>
+        <div class="back-2b">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                &nbsp; &nbsp;13
+                <br>
+                &nbsp; &nbsp;Kami adalah Team Wangy
+            </samp>
+         </div><br> 
+         
+         Saat kita ingin menampilkan file PHP kita pada browser, kita dapat mengaktifkan xampp lalu aktifkan apache. Setelah itu, 
+        kita dapat mengetikan localhost/(nama file kita) kemudian folder pun akan browser kita. <br><br>
+        <div class="borderimg"><img src="https://itkampus.com/wp-content/uploads/2020/08/tampilan-xampp.jpg"></div>
+
+        <h2>Pembuatan Form pada PHP</h2>
+        Untuk membuat form pada file php, kita dapat membuatnya seperti dalam pembuatan form di fie HTML. 
+        Pada pembuatan form, kita <b>tidak memerlukan tag php (&#60;?php &nbsp;&nbsp;?&#62;)</b> karena pada pembuatan form, 
+        kita tidak menggunakan elemen PHP.  
+        Untuk penulisan pembuatan form, kita dapat langsung menggunakan tag form lalu menggunakan atribut nama, atribut action, 
+        dan atribut method dengan value get atau post. Setelah itu, kita dapat menggunakan tag input dengan atribut type yang kita 
+        inginkan dan atribut name dan value sesuai dengan keinginan kita. <br><br>
+        Untuk contoh pembuatan form pada file php dapat dilihat pada gambar di bawah :
+
+        <h4>Halaman 1</h4>
+        <pre>
+            <div class="back-1b">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+                    &#60;form action="hasil.php" method="GET"&#62;
+                    Nama: &#60;input type="text" name="nama"&#62;
+                    &#60;br&#62;
+                    &#60;input type="submit" value="Kirim" name="kirim"&#62;
+                &#60;/form&#62;</b>
+                
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>   
+        </pre>
+    
+         <h4>Halaman 2</h4>
+         
+         <pre>
+            <div class="back-1b"><b>
+                &#60;?php
+                    $nama1=$_GET('nama');
+                    echo="Terima Kasih," . $nama1;
+                ?&#62;
+            </div></b>
+        </pre>
+
+        <h4>Tampilan yang dihasilkan dari rangkaian kode di atas</h4>
+
+        <div class="back-2b">
+                <samp>
+                    <form action="hasil.php" method="GET">
+                        &nbsp;&nbsp;Nama: <input type="text" name="nama" Value="Hasil Input Data" disabled>
+                        <br>
+                        &nbsp;&nbsp;<input type="submit" value="Kirim" name="kirim" disabled>
+                    </form>
+                </samp>
+        </div><br> 
+        <div class="back-2b">
+                <samp>
+                    &nbsp;&nbsp;Terima kasih, "(Hasil Input Data)"
+                </samp>
+        </div><br> 
+
+        Dari serangkaian kode diatas, kita dapat melihat bahwa rangkaian kode diatas merupakan sebuah form yang meminta kita untuk memasukan
+        nama kita ke dalam form. Setelah kita memasukan nama kita dan memencet tomnbol submit maka form akan berubah ke halaman 2 yang akan memunculkan 
+        tulisan "Terima kasih,"dengan disebelahnya adalah hasil dari data yang telah kita input. <br><br>
+
+        Selain itu juga, kita dapat menggunakan fungsi if pada file PHP kita. Fungsi if merupakan sebuah fungsi yang kita gunakan saat kita
+        akan menerima beberapa kemungkinan dan kita hanya ingin salah satu kemungkinan yang menjadi jalannya. Untuk contoh penggunaan fungsi if pada
+        form dapat dilihat pada contoh di bawah :
+
+        <pre>
+            <div class="back-1b">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+                        &#60;form action="" method="POST"&#62;
+                        Nama: &#60;input type="text" name="nama"&#62;
+                        &#60;br&#62;
+                        &#60;input type="submit" value="Kirim" name="kirim"&#62;
+                            
+                    &#60;/form&#62;
+                
+                &#60;?php
+
+                $nama1=FILTER_INPUT(INPUT_POST,'nama');
+                $ref=FILTER_INPUT(INPUT_POST,'refresh');
+
+                if(isset($nama1)){
+                    if($nama1 !=""){
+                        echo("Terima Kasih," .$nama1);
+                    } else{
+                        echo("Anda belum mengisi data");
+                    }
+                }
+                ?&#62;</b>
+                
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>   
+        </pre>
+    
+        Dari form yang telah kita buat diatas, kita dapat melihat bahwa saat kita menginput nama pada form maka form akan langsung mengirimkan
+        input dari file ke bagian bawah yang membuat bagian bawah mengeluarkan kata <b>"Terima kasih, (Hasil Input)"</b> tetapi jika tidak terdapat input
+        maka form akan mengeluarkan <b>"Anda belum mengisi data"</b>.
+            
+</span>
+
+<!-- <copyright> -->
+    <div class="copyyyy">
+         <div class="linemateri2"><hr></div>    
+         <a class="contactmateri3" href="home.php#kontak">Contact Us<a></a></p>
+         <p class="footermateri2">© Copyright 2022 | Made by Team Wangy :) </p>
+         <img class="footerlogomateri2" src="images/tw2.png">
+    </div>
+
+
+</body>
+</html>

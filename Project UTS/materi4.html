@@ -1,0 +1,267 @@
+<!-- Team Wangy
+    Elmosius Suli - 2272008
+    Joseph Adiwiguna - 2272020 --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi 4</title>
+    <link rel="stylesheet" type="text/css"href="CSS/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <span class="bgmateri4"></span>
+    <div class="header">
+        <a href="home.php"><img class="logowangy" src="images/tw2.png"></a>
+        <div class="headersentence">
+        <td><a class="linking5" href="home.php">HOME</a></td>
+        <td><a class="linking5" href="aboutus.html">ABOUT US</a></td>
+        <td><a class="linking5" href="home.php#materi">MATERI</a></td> </div> 
+    </div>
+
+    <div class="containermateri4"></div>
+    <span class="titlemateri4">CSS</span>
+    <span class="titlemateri4a">mempercantik atau memperindah tampilan suatu web</span>
+
+    <hr class="linec"></hr>
+    <span class="bark1">CSS</span>
+    <span class="bark2">
+        <h2>Apa itu CSS ?</h2>
+        CSS adalah singkatan dari cascading style sheets, yaitu bahasa yang digunakan untuk menata/mengedit file HTML yang kita miliki. 
+        Saat kita menggunakan, CSS kita dapat langsung menata beberapa file HTML secara sekaligus. Dengan CSS, kita bisa mengatur jenis 
+        font, warna tulisan, dan latar belakang halaman. Dengan kata lain, <b>CSS berfungsi untuk memperindah file HTML</b> kita. 
+        Untuk syntax CSS, kita memerlukan <b>selector</b> dan <b>declaration</b>. <b>Selector merupakan elemen HTML yang ingin kita edit/diberi style</b>. 
+        Penanda selector dapat berupa langsung elemen HTML, id, ataupun class. 
+        <br><br>
+        <b>Declaration merupakan elemen-elemen yang mengedit selector</b>. Setiap declaration dibuka dan ditutup oleh kurung kurawal ({----}). 
+        Selain itu juga, setiap declaration berisi property dan value dari property tersebut. Saat menggunakan declaration, kita dapat 
+        menggunakan tanda titik koma (;) sebagai pemisah antar declaration. 
+
+    <!-- cara penggunaan css  -->
+
+        Untuk membuat file CSS, kita dapat membuat file di visual studio code dengan berakhiran <b>.css 
+        (Contoh: style.css)</b>. Terdapat 3 cara untuk menggunakan file css dalam file HTML kita. Cara-cara tersebut adalah : <br><br>
+
+        <li><b>External style sheet </b></li><br>
+        Pada penggunaan file css secara external style sheet, kita menggunakan 2 file yaitu file HTML dan file css sehingga kita harus 
+        menghubungkan file css dengan file HTML kita agar css dapat bekerja pada file HTML kita. Untuk menghubungkan file css dengan 
+        file HTML, kita dapat menggunakan tag link lalu gunakan atribut rel dengan value stylesheet kemudian gunakan atribut href dan 
+        masukan nama file css kita. Setelah itu, baru kita masukan selector dan declaration kedalam file css kita.
+
+        <h3>Berikut merupakan cara penggunaan CSS Eksternal :</h3>
+        <!-- https://css-tricks.com/considerations-styling-pre-tag/ -->
+        <pre>
+            <div class="back-1c">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;
+                    <b>&#60;link rel=”stylesheet” href=(nama file css).css"&#62;</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>
+       
+        <li><b>Internal style sheet </b></li><br>
+        Pada penggunaan file css secara internal style sheet, kita membuat file css dan file HTML dalam satu file saja. 
+        Untuk menggunakan file css secara internal, kita dapat memasukan tag style pada bagian head HTML kita kemudian masukan selector 
+        dan declaration yang kita pilih ke dalam tag style. 
+
+        <h3>Berikut merupakan cara penggunaan CSS Internal :</h3>
+
+        <pre>
+            <div class="back-1c">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+
+                    <b>&#60;style &#62;  
+                        body{
+                            background-color:blue;
+                        }    
+                    &#60;/style &#62; </b>
+                &#60;/head &#62;
+                &#60;body &#62;
+                   
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>
+
+        <li><b>Inline style</b></li><br>
+        Pada penggunaan file css secara inline, kita menggunakan file css pada elemen HTML yang ingin kita edit. Untuk melakukan edit, 
+        kita dapat membuat atribut style kemudian masukan selector dan declaration yang kita inginkan. 
+
+        <h3>Berikut merupakan cara penggunaan CSS Inline :</h3>
+
+        <pre>
+            <div class="back-1c">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+
+                    <b>&#60;style &#62;  
+                        &#60;body bgcolor="blue"&#62;   
+                    &#60;/style &#62; </b>
+                &#60;/head &#62;
+                &#60;body &#62;   
+            </div>
+        </pre>
+
+        <b>Jika kita menggunakan ketiga cara penggunaan file CSS diatas secara bersamaan, CSS secara inline yang menjadi 
+        prioritas</b> dari komputer. Hal tersebut disebabkan komputer mendeteksi CSS mana yang terdekat dengan elemen. Oleh karena 
+        itu, CSS secara inline diprioritaskan saat menggunakan tiga cara diatas secara bersamaan. 
+
+    <!-- jenis selector  -->
+        
+        Untuk penggunaan CSS secara eksternal, kita dapat menghubungkan selector dengan CSS kita. Selector yang dapat kita gunakan 
+        adalah elemen HTML, id, dan class. 
+        <br><br>
+        Untuk menghubungkan <b>elemen HTML dengan CSS eksternal</b>, kita dapat menuliskan elemen yang terdapat pada file HTML kita 
+        ke halaman CSS kita. 
+
+        <pre>
+            <div class="back-1c">
+                body{
+                    background-color:red;
+                }
+                h1{
+                    font-size:20px;
+                }
+            </div>
+        </pre>
+        Untuk menghubungkan <b>selector id dengan CSS external</b>, kita dapat menggunakan <b>tanda hashtag/pagar(#)</b> lalu menuliskan id dari 
+        sebuah elemen HTML. Saat menggunakan selector id, kita tidak boleh mengawalinya dengan angka. 
+
+        <pre>
+            <div class="back-1c">
+                .judul1{
+                    font-size:60px;
+                }
+                .penjelasan1{
+                    font-size:20px;
+                }
+            </div>
+        </pre>
+
+        Untuk menghubungkan selector class dengan CSS external, kira dapat menggunakan <b>tanda titik(.)</b> lalu menuliskan class dari 
+        elemen HTML tersebut.
+
+        <pre>
+            <div class="back-1c">
+                .judul2{
+                    color:white;
+                }
+                .penjelasan2{
+                    text-align:center;
+                }
+            </div>
+        </pre>
+
+        Selain elemen HTML, id dan class, terdapat juga <b>Selector Universal</b>. 
+        Selector universal merupakan selector yang otomatis memlihi semua elemen HTML yang ada pada halaman. 
+        Selector universal digunakan dengan hanya mengetikan <b>tanda bintang (*) saja</b> . 
+
+        <pre>
+            <div class="back-1c">
+                {
+                    text-align:center;
+                    font-size:20px;
+                }
+            </div>
+        </pre>
+
+    <!-- Komentar css -->
+        <h2>Komentar</h2>
+
+        Pemberian komentar pada CSS cukup berbeda dengan pemberian komentar pada HTML. Untuk memberikan komentar pada CSS, kita dapat 
+        menuliskannya dengan <b>tanda garis mirng dan bintang(/*)</b> lalu <b>isi komentar</b> kemudian 
+        ditutup dengan <b>tanda bintang dan garis miring(*/)</b>. 
+    
+    <!-- bikin css  -->
+         <h2>CSS Box Model</h2>
+         Untuk pembuatan CSS, kita harus mengetahui CSS box model. Model tersebut adalah
+         Elemen yang kita masukan dalam HTML disebut sebagai content.
+         Area yang ada disekitar content disebut <b>padding. </b>
+         Padding juga dapat berfungsi sebagai jarak antara content dengan border. 
+         Pembatas padding suatu content disebut border. 
+         Bagian luar dari border disebut <b>margin.</b> 
+         Margin juga dapat digunakan sebagai jarak antar suatu border dengan border lainnya. <br><br>
+
+         <div class="bordering"><img src="https://miro.medium.com/max/408/1*sKnLrT1TtqWDZg7GWoBCow.png"></div><br>
+         
+         CSS memiliki banyak sekali property yang dapat digunakan untuk mengedit halaman HTML kita.
+         Oleh karena itu, kita dapat melihat property CSS melalui link dibawah ataupun melalui W3School.
+
+         Properti CSS pada W3School
+
+         Berikut merupakan beberapa contoh dari property CSS (link) : </p>
+        
+            <a class="linkcss"href="https://www.w3schools.com/cssref/css3_pr_background.php">CSS Background</a>
+            <a class="linkcss"href="https://www.w3schools.com/cssref/pr_border.php">CSS Border</a>
+            <a class="linkcss"href="https://www.w3schools.com/cssref/pr_margin.php">CSS Margin</a>
+            <a class="linkcss"href="https://www.w3schools.com/cssref/pr_padding.php">CSS Padding</a>
+            <a class="linkcss"href="https://www.w3schools.com/cssref/pr_dim_height.php">CSS Height</a>
+            <a class="linkcss"href="https://www.w3schools.com/cssref/pr_dim_width.php">CSS Width</a>
+            <a class="linkcss"href="https://www.w3schools.com/cssref/pr_font_font.php">CSS Font</a>
+            <a class="linkcss"href="https://www.w3schools.com/cssref/pr_list-style.php">CSS List</a>
+            <a class="linkcss"href="https://www.w3schools.com/cssref/pr_tab_table-layout.php"> CSS Table Layouts</a><br><br>
+         
+        <!-- coding sederhana -->
+        Untuk menyederhanakan penulisan CSS, kita dapat menuliskannya dengan cara dibawah (Contoh yang kami gunakan adalah CSS untuk bagian Body)
+
+        <pre>
+            <div class="back-1c">
+                Body{
+                    Background-color:#ffffff;
+                    Background-image:url(“img tree.png);
+                    Background-repeat: no-repeat;
+                    Background-position:right top;
+                }                
+            </div>
+        </pre>
+
+        <h4>Menjadi</h4>
+
+        <pre>
+            <div class="back-1c">
+                Body{
+                    Background: #ffffff url(“img tree.png) no-repeat right top;
+                }                      
+            </div>
+        </pre>
+    </span>
+
+<!-- <copyright> -->
+    <div class="copyyyyc">
+         <div class="linemateri4"><hr></div>    
+         <a class="contactmateri4" href="home.php#kontak">Contact Us<a></a></p>
+         <p class="footermateri4">© Copyright 2022 | Made by Team Wangy :) </p>
+         <img class="footerlogomateri4" src="images/tw2.png">
+    </div>
+
+
+
+</body>
+</html>

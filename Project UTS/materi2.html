@@ -1,0 +1,816 @@
+<!-- Team Wangy
+    Elmosius Suli - 2272008
+    Joseph Adiwiguna - 2272020 --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi 2</title>
+    <link rel="stylesheet" type="text/css"href="CSS/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <span class="bgmateri2"></span>
+    <div class="header">
+        <a href="home.php"><img class="logowangy" src="images/tw2.png"></a>
+        <div class="headersentence">
+        <td><a class="linking6" href="home.php">HOME</a></td>
+        <td><a class="linking6" href="aboutus.html">ABOUT US</a></td>
+        <td><a class="linking6" href="home.php#materi">MATERI</a></td> </div> 
+    </div>
+
+
+    <div class="containermateri2"></div>
+    <span class="titlemateri2">HTML Lanjutan</span>
+    <span class="titlemateri2a">List Table</span>
+
+    <hr class="linem2"></hr>
+    <span class="barr1">List & Table</span>
+    <span class="barr2">
+        <h6>List</h6></span>
+
+    </span>   
+    <span class="barr3">
+        Dalam HTML, terdapat 2 jenis list. &nbsp; Jenis list tersebut adalah   
+
+    <!-- unorder list -->  
+
+        <h3>a. Unorder List (&#60;ul&#62;)</h3>
+        Unorder list merupakan list yang tidak memiliki urutan/tidak terpaku dengan susunan.
+        Untuk unorder list, kita dapat <b>menggunakan tag ul (&#60;ul&#62;) lalu untuk membuat list (&#60;li&#62;</b>, kita dapat menggunakan tag list. Pada unorder list, 
+        kita dapat menggunakan atribut type dengan value disc, square, circle karena mereka tidak terpaku dengan urutan. <br><br>
+        Berikut merupakan contoh dari penggunaan unorder list :
+
+        <h4>Type Disc</h4>
+        <!-- https://css-tricks.com/considerations-styling-pre-tag/  -->
+        <pre>
+            <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+                    &#60;ul type="disc"&#62;
+                        &#60;li&#62;Kalimat 1&#60;/li&#62;
+                        &#60;li&#62;Kalimat 2&#60;/li&#62;
+                        &#60;li&#62;Kalimat 3&#60;/li&#62;
+                    &#60;/ul&#62;</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                <ul type="disc">
+                    <li>Kalimat 1</li>
+                    <li>Kalimat 2</li>
+                    <li>Kalimat 3</li>
+                </ul>
+            </samp>
+         </div><br>
+            
+         <h4>Type Square</h4> 
+         <pre>
+            <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+                    &#60;ul type="square"&#62;
+                        &#60;li&#62;Kalimat 1&#60;/li&#62;
+                        &#60;li&#62;Kalimat 2&#60;/li&#62;
+                        &#60;li&#62;Kalimat 3&#60;/li&#62;
+                    &#60;/ul&#62;</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>    
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                <ul type="square">
+                    <li>Kalimat 1</li>
+                    <li>Kalimat 2</li>
+                    <li>Kalimat 3</li>
+                </ul>
+            </samp>
+        </div><br>
+
+        <h4>Type Circle</h4>
+        <pre>
+           <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+                    &#60;ul type="circle"&#62;
+                        &#60;li&#62;Kalimat 1&#60;/li&#62;
+                        &#60;li&#62;Kalimat 2&#60;/li&#62;
+                        &#60;li&#62;Kalimat 3&#60;/li&#62;
+                    &#60;/ul&#62;</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+           </div>
+       </pre>    
+       </pre>
+       <div class="back-2">
+       <h3> &nbsp; Hasil :</h3>
+           <samp>
+               <ul type="circle">
+                   <li>Kalimat 1</li>
+                   <li>Kalimat 2</li>
+                   <li>Kalimat 3</li>
+               </ul>
+           </samp>
+        </div><br>   
+        <span class="tips1"><b><i>Tips</i></b> : &nbsp; Untuk membuat unorder list secara cepat, kita dapat menggunakan rumus <b>“ul>li*(jumlah list yang diperlukan)”</b> sehingga saat 
+        dienter, list akan berjumlah sesuai dengan angka yang dikali dengan list.</span><br><Br>
+        Untuk contoh penggunaan rumus cepat dapat dilihat pada codingan di bawah  :   
+        
+        <pre>
+           <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;
+        
+                <b>ul&#62;li*5</b>
+                
+                &#60;/body &#62;
+                &#60;/html&#62;
+           </div>
+       </pre>    
+       </pre>
+       <div class="back-2">
+       <h3> &nbsp; Hasil :</h3>
+           <samp>
+                &nbsp; &#60;ul&#62;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;/li&#62;
+                            <br>
+               &nbsp; &#60;/ul&#62;
+           </samp>
+        </div><br>   
+
+        <span class="tips1"><b><i>Tips</i></b> : &nbsp; Untuk menampilkan data didalam list secara cepat, Kita dapat menggunakan rumus <b>“ul>li{data $}*(banyak data yang kita butuhkan)”</b> 
+        sehingga saat dienter, jumlah data yang keluar akan sesuai dengan angka yang dikali pada list tersebut. </span><br><br>
+        Untuk contoh penggunaan rumus cepat dapat dilihat pada codingan di bawah :  
+
+        <pre>
+           <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;
+        
+                <b>ul&#62;li{Data ke $}*5</b>
+                
+                &#60;/body &#62;
+                &#60;/html&#62;
+           </div>
+       </pre>    
+       </pre>
+       <div class="back-2">
+       <h3> &nbsp; Hasil :</h3>
+           <samp>
+                &nbsp;&#60;ul&#62;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;Data ke 1&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;Data ke 2&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;Data ke 3&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;Data ke 4&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;Data ke 5&#60;/li&#62;
+                        <br>
+                &nbsp;&#60;/ul&#62;
+           </samp>
+        </div><br>   
+
+    <!-- order list --> 
+        <h3>b. Order List (&#60;ol&#62;)</h3>
+        Order list merupakan list yang memiliki urutan/terpaku dengan susunan.
+        Untuk orderlist, kita dapat menggunakan tag ol dan untuk membuat list, kita dapat menggunakan tag list. 
+        Pada order list, kita dapat menggunakan atribut type dengan value 1, i, I, a, dan A karena mereka terpaku dengan urutan/susunan. 
+        <br><br>Berikut merupakan beberapa contoh dari order list :
+
+        <h4>Type 1</h4>
+        <pre>
+            <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;
+                    <b>&#60;ol type="1"&#62;
+                        &#60;li&#62;Kalimat 1&#60;/li&#62;
+                        &#60;li&#62;Kalimat 2&#60;/li&#62;
+                        &#60;li&#62;Kalimat 3&#60;/li&#62;
+                    &#60;/ol&#62;</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>    
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                <ol type="1">
+                    <li>Kalimat 1</li>
+                    <li>Kalimat 2</li>
+                    <li>Kalimat 3</li>
+                </ol>
+            </samp>
+         </div><br>  
+
+         <h4>Type I</h4>
+        <pre>
+            <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;
+                    <b>&#60;ol type="I"&#62;
+                        &#60;li&#62;Kalimat 1&#60;/li&#62;
+                    &#60;li&#62;Kalimat 2&#60;/li&#62;
+                    &#60;li&#62;Kalimat 3&#60;/li&#62;
+                    &#60;/ol&#62;</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>    
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                    <ol type="I" class="romawi">
+                        <li>Kalimat 1</li>
+                        <li>Kalimat 2</li>
+                        <li>Kalimat 3</li>
+                    </ol>
+            </samp>
+         </div><br> 
+
+          <h4>Type A</h4>
+        <pre>
+            <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;
+                    <b>&#60;ol type="A"&#62;
+                        &#60;li&#62;Kalimat 1&#60;/li&#62;
+                    &#60;li&#62;Kalimat 2&#60;/li&#62;
+                    &#60;li&#62;Kalimat 3&#60;/li&#62;
+                    &#60;/ol&#62;</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>    
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                <ol type="A">
+                     <li>Kalimat 1</li>
+                     <li>Kalimat 2</li>
+                     <li>Kalimat 3</li>
+                </ol>
+            </samp>
+         </div><br> 
+
+
+
+         <span class="tips1"><b><i>Tips</i></b> : &nbsp; Untuk pembuatan order list, kita dapat menggunakan cara cepat seperti pada unorder list yaitu <b>“ol>li*(jumlah list 
+         yang diperlukan)”.</b>
+         Untuk order list, kita dapat menggunakan atribut start. Kita dapat menggunakan atribut start sebagai awalan dari order list. 
+         Awalan pada order list dapat berupa angka, huruf romawi, hingga alfabet. Jika kita menggunakan atribut start dengan value 
+         misalnya 5 maka order list akan mulai dari angka 5 bukan angka 1.</span><br><br>
+         Untuk contoh dari penggunaan atribut start dapat dilihat pada codingan di bawah :
+   
+         <pre>
+            <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;
+
+                <b>ol&#62;li*5</b>
+
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>    
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                &nbsp;&#60;ol&#62;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;&#60;/li&#62;
+                            <br>
+                 &nbsp; &#60;/ol&#62;
+            </samp>
+         </div><br>    
+
+         <pre>
+            <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;
+
+                <b>ol&#62;li{Data ke $}*5</b>
+
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>    
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                &nbsp;&#60;ol&#62;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;Data ke 1&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;Data ke 2&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;Data ke 3&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;Data ke 4&#60;/li&#62;
+                            <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#60;li&#62;Data ke 5&#60;/li&#62;
+                            <br>
+                &nbsp;&#60;/ol&#62;
+            </samp>
+         </div><br>    
+   
+    <!-- Description list -->
+
+         <h2>Description List (&#60;dl&#62;)</h2>
+         Description list merupakan list yang digunakan saat kita akan mendeskripsikan suatu hal.
+         Untuk description list, kita dapat menggunakan tag dl (&#60;dl&#62;) lalu kita gunakan tag dt (&#60;dt&#62;) untuk menuliskan kata apa yang akan di definisi, 
+         kita dapat mengetikan tag dd (&#60;dd&#62;) untuk menuliskan deskripsi dari kata tersebut. Untuk contoh penggunaan tag dl 
+         dapat dilihat pada contoh di bawah:
+         
+         <pre>
+            <div class="back-1">
+                    &#60;!DOCTYPE html&#62;
+                    &#60;html lang="en"&#62;
+                    &#60;head &#62;
+                        &#60;meta charset="UTF-8"&#62;
+                        &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                        &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                        &#60;title&#62;Document&#60;/title&#62;
+                    &#60;/head &#62;
+                    &#60;body &#62;<b>
+                    &#60;dl&#62;
+                        &#60;dt&#62;Team Wangy&#60;dt&#62;
+                        &#60;dd&#62;Team Wangy merupakan...&#60;dd&#62;
+                    &#60;/dl&#62;</b>
+                    &#60;/body &#62;
+                    &#60;/html&#62;
+            </div>
+        </pre>    
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                <dl>
+                    <dt>&nbsp;Team Wangy<dt>
+                    <dd>&nbsp;Team Wangy merupakan...<dd>
+                </dl>
+            </samp>
+         </div><br>    
+         <span class="tips1"><b><i>Tips</i></b> : &nbsp; Untuk memperindah dt, kita dapat menggunakan text formatting agar tulisan menjadi lebih nyaman untuk dibaca.</span>
+   
+    <!-- table  -->
+        <h2>Table (&#60;table&#62;)</h2>
+        Tag table merupakan tag yang digunakan saat kita ingin membuat table pada file HTML kita.
+        Untuk penggunaan tag table, kita dapat menuliskan tag table lalu dalam tag table, kita dapat menuliskan <b>tag tr(&#60;tr&#62;)</b>. Tag tr 
+        merupakan tag yang berfungsi sebagai baris pada sebuah tabel. 
+        &nbsp;Setelah tag tr, kita ketikan <b>tag td (&#60;td&#62;)</b>. Tag td merupakan tag yang 
+        berfungsi sebagai kolom pada sebuah tabel.Untuk membuat batas dari kolom terlihat, kita dapat menggunakan <b>atribut border</b> 
+        sehingga table dapat dilihat oleh kita. <br><br>
+        Untuk penulisan tag table dapat kita lihat pada gambar di bawah : 
+
+        <pre>
+            <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+        
+                    &#60;table&#62;
+                        &#60;tr&#62;
+                            &#60;td&#62;Nama Kelompok:&#60;/td&#62;
+                            &#60;td&#62;Wangy&#60;/td&#62;
+                        &#60;/tr&#62;
+        
+                        &#60;tr&#62;
+                            &#60;td&#62;Jumlah Anggota:&#60;/td&#62;
+                            &#60;td&#62;2&#60;/td&#62;
+                        &#60;/tr&#62
+                    &#60;/table&#62;</b>
+        
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>    
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                <table class="satab">
+                    <tr class="satab">
+                        <td class="satab">Nama Kelompok:</td>
+                        <td class="satab">Wangy</td>
+                    </tr>
+        
+                    <tr class="satab">
+                        <td class="satab">Jumlah Anggota:</td>
+                        <td class="satab">2</td>
+                    </tr>
+                </table>
+            </samp>
+         </div><br>    
+
+         Selain itu juga, kita dapat memperikan judul pada table dengan menggunakan tag caption dibawah tag tabel. 
+
+         <pre>
+            <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+        
+                    &#60;table&#62;
+                    &#60;caption&#62;Tabel Team Wangy&#60;/caption&#62;
+                        &#60;tr&#62;
+                            &#60;td&#62;Nama Kelompok:&#60;/td&#62;
+                            &#60;td&#62;Wangy&#60;/td&#62;
+                        &#60;/tr&#62;
+        
+                        &#60;tr&#62;
+                            &#60;td&#62;Jumlah Anggota:&#60;/td&#62;
+                            &#60;td&#62;2&#60;/td&#62;
+                        &#60;/tr&#62
+                    &#60;/table&#62;</b>
+        
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>    
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                <table class="satab">
+                    <caption class="satab">Tabel Team Wangy</caption>
+                    <tr class="satab">
+                        <td class="satab">Nama Kelompok:</td>
+                        <td class="satab">Wangy</td>
+                    </tr>
+        
+                    <tr class="satab">
+                        <td class="satab">Jumlah Anggota:</td>
+                        <td class="satab">2</td>
+                    </tr>
+                </table>
+            </samp>
+         </div><br>  
+   
+        <span class="tips1"><b><i>Tips</i></b> : &nbsp;  Untuk membuat tabel dengan baris sebanyak yang kita mau, kita dapat menggunakan rumus <b>“tabel> (tr>td*(jumlah kolom yang 
+        diperlukan))*(jumlah baris yang diinginkan)”</b> sehingga saat dienter, tabel akan otomatis terbuat dengan jumlah baris dan kolom 
+        sesuai keinginan kita.</span><br><Br> Untuk contoh penggunaan rumus cepat dapat dilihat pada gambar di bawah :
+   
+        <pre>
+            <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body class="satab1" &#62;
+                    <b>table&#62;(tr&#62;(td*2))*2</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>    
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                <table class="satab1">
+                    <tr class="satab1">
+                        <td class="satab1"></td>
+                        <td class="satab1"></td>
+                    </tr>
+                    <tr class="satab1">
+                        <td class="satab1"></td>
+                        <td class="satab1"></td>
+                    </tr>
+                </table>
+            </samp>
+         </div><br>    
+         
+         <span class="tips1"><b><i>Tips</i></b> : &nbsp; Untuk menampilkan data didalam tabel secara otomatis, Kita dapat menggunakan rumus <b>“tabel>(tr>td {data ke $}*(jumlah kolom 
+         yang diperlukan))*(jumlah baris yang diinginkan)”“</b> sehingga saat dienter, jumlah data yang keluar akan sesuai dengan jumlah 
+         baris dan kolom yang telah dimasukan.</span><br><br> Untuk contoh penggunaan rumus cepat dapat dilihat pada codingan di bawah 
+
+         <pre>
+            <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body class="satab1" &#62;
+                    <b>table&#62;(tr&#62;(td{Data ke $}*2))*2</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>    
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                <table class="satab1">
+                    <tr class="satab1">
+                        <td class="satab1">Data ke 1</td>
+                        <td class="satab1">Data ke 2</td>
+                    </tr>
+                    <tr class="satab1">
+                        <td class="satab1">Data ke 1</td>
+                        <td class="satab1">Data ke 2</td>
+                    </tr>
+                </table>
+            </samp>
+         </div><br>     
+         
+    <!-- atribut dan value tabel  -->
+        <h2>Atribut dan value pada tabel </h2>
+        Untuk membuat tabel /cell pada tabel menjadi lebih menarik kita dapat menggunakan atribut dan value yang memperindah 
+        tabel/cell pada tabel kita. Atribut dan value yang dapat kita gunakan adalah
+
+        <ul>
+            <li><b>bg color :</b>
+                 Untuk mewarnai tabel/cell  </li>
+            <li><b>bordercolor : </b>
+                Untuk merubah warna border tabel
+            </li>
+            <li><b>width : </b>
+                Untuk merubah ukuran lebar tabel 
+            </li>
+            <li><b>height : </b>
+                Untuk merubah tinggi tabel 
+            </li>
+            <li>
+                <b>align: </b>
+                Untuk merubah posisi tabel pada browser.
+            </li>
+            <li>
+                <b>cellspacing : </b>
+                Untuk memperbesar jarak antar cell
+            </li>
+            <li><b>cellpadding : </b>
+                Untuk memperbesar ukuran cell
+            </li>
+            <li>
+                <b>valign : </b>
+                Untuk merubah ketinggian tulisan pada tabel 
+            </li>
+        </ul>
+        
+    <!-- colspan  -->
+        <h2>Colspan</h2>
+        Colspan merupakan sebuah atribut yang digunakan untuk <b>memperbesar kolom</b> pada sebuah cell.
+        Jika kita memasukan colspan pada sebuah kolom maka cell tersebut akan memperbesar sebuah cell sesuai dengan value dari atribut tersebut. 
+        Sebagai contoh, jika kita memasukan atribut colspan sebesar 3 maka cell tersebut akan <b>memperbesar kolom</b> sebuah cell sebanyak 3.
+        <br><br>
+        Untuk contoh penggunaan colspan, kita dapat melihat codingan di bawah :
+   
+        <pre>
+            <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+                &#60;table&#62;
+                        &#60;tr&#62;
+                            &#60;td rowspan="3"&#62;Data ke 1&#60;/td&#62;
+                            &#60;!--&#60;td&#62;&#60;/td&#62;--&#62;
+                            &#60;!--&#60;td&#62;&#60;/td&#62;--&#62;
+                        &#60;/tr&#62;
+                        &#60;tr&#62;
+                            &#60;td&#62;Data ke 1&#60;/td&#62;
+                            &#60;td&#62;Data ke 2&#60;/td&#62;
+                            &#60;td&#62;Data ke 3&#60;/td&#62;
+                        &#60;/tr&#62;
+                        &#60;tr&#62;
+                            &#60;td&#62;Data ke 1&#60;/td&#62;
+                            &#60;td&#62;Data ke 2&#60;/td&#62;
+                            &#60;td&#62;Data ke 3&#60;/td&#62;
+                        &#60;/tr&#62;
+                &#60;/table&#62;</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>    
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                <table class="satab1">
+                    <tr>
+                        <td colspan="3" class="satab1">Data ke 1</td>
+                        <!--<td></td>-->
+                        <!--<td></td>-->
+                    </tr>
+                    <tr class="satab1">
+                        <td class="satab1">Data ke 1</td>
+                        <td class="satab1">Data ke 2</td>
+                        <td class="satab1">Data ke 3</td>
+                    </tr>
+                    <tr class="satab1">
+                        <td class="satab1">Data ke 1</td>
+                        <td class="satab1">Data ke 2</td>
+                        <td class="satab1">Data ke 3</td>
+                    </tr>
+                </table>
+            </samp>
+         </div><br>     
+
+         <span class="tips1"><b><i>Tips</i></b> : &nbsp; Untuk membuat tabel sesuai dengan ukuran yang telah ditentukan, kita dapat membuat cell yang tercolspan sebagai comment 
+        sehingga cell tersebut tidak muncul di halaman website kita dan ukuran tabel sesuai dengan ukuran awal.</span>
+
+    <!-- rowspan  -->
+        <h2>Rowspan</h2>
+        Rowspan merupakan sebuah atribut yang digunakan untuk <b>memperbesar baris</b> pada sebuah cell.
+        Jika kita memasukan rowspan pada sebuah kolom maka cell tersebut akan memperbesar sesuai dengan value dari atribut tersebut. 
+        Sebagai contoh, jika kita memasukan atribut rowspan sebesar 3 maka cell tersebut akan <b>memperbesar baris</b> sebuah cell sebanyak 3.
+
+        <pre>
+            <div class="back-1">
+                &#60;!DOCTYPE html&#62;
+                &#60;html lang="en"&#62;
+                &#60;head &#62;
+                    &#60;meta charset="UTF-8"&#62;
+                    &#60;meta http-equiv="X-UA-Compatible" content="IE=edge"&#62;
+                    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                    &#60;title&#62;Document&#60;/title&#62;
+                &#60;/head &#62;
+                &#60;body &#62;<b>
+                &#60;table&#62;
+                        &#60;tr&#62;
+                            &#60;td colspan="3"&#62;Data ke 1&#60;/td&#62;
+                            &#60;td&#62;Data ke 2&#60;/td&#62;
+                            &#60;td&#62;Data ke 3&#60;/td&#62;
+                        &#60;/tr&#62;
+                        &#60;tr&#62;
+                            &#60;!--&#60;td&#62;&#60;/td&#62;--&#62;
+                            &#60;td&#62;Data ke 2&#60;/td&#62;
+                            &#60;td&#62;Data ke 3&#60;/td&#62;
+                        &#60;/tr&#62;
+                        &#60;tr&#62;
+                            &#60;!--&#60;td&#62;&#60;/td&#62;--&#62;
+                            &#60;td&#62;Data ke 2&#60;/td&#62;
+                            &#60;td&#62;Data ke 3&#60;/td&#62;
+                        &#60;/tr&#62;
+                &#60;/table&#62;</b>
+                &#60;/body &#62;
+                &#60;/html&#62;
+            </div>
+        </pre>    
+        </pre>
+        <div class="back-2">
+        <h3> &nbsp; Hasil :</h3>
+            <samp>
+                <table class="satab1">
+                    <tr>
+                        <td rowspan="3" class="satab1">Data ke 1</td>
+                        <td class="satab1">Data ke 2</td>
+                        <td class="satab1">Data ke 3</td>
+                    </tr>
+                    <tr class="satab1">
+                        <!-- <td></td> -->
+                        <td class="satab1">Data ke 2</td>
+                        <td class="satab1">Data ke 3</td>
+                    </tr>
+                    <tr class="satab1">
+                        <!-- <td></td> -->
+                        <td class="satab1">Data ke 2</td>
+                        <td class="satab1">Data ke 3</td>
+                    </tr>
+                </table>
+            </samp>
+         </div><br>    
+
+        <span class="tips1"><b><i>Tips</i></b> : &nbsp; Untuk membuat tabel sesuai dengan ukuran yang telah ditentukan, kita dapat membuat cell yang terrowspan sebagai comment 
+        sehingga cell tersebut tidak muncul di halaman website kita dan ukuran tabel sesuai dengan ukuran awal.</span>
+       
+     </span>
+
+<!-- <copyright> -->
+    <div class="copyyy">
+         <div class="linemateri2"><hr></div>    
+         <a class="contactmateri2" href="home.php#kontak">Contact Us<a></a></p>
+         <p class="footermateri2">© Copyright 2022 | Made by Team Wangy :) </p>
+         <img class="footerlogomateri2" src="images/tw2.png">
+    </div>
+</body>
+</html>
